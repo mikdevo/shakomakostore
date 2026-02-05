@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Shako Mako</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        .form-input {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            color: #fff;
+            font-family: inherit;
+            transition: 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--cyan-bright);
+            box-shadow: 0 0 15px rgba(42, 213, 246, 0.2);
+            background: rgba(42, 213, 246, 0.05);
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Shako Mako">
+                <span class="gradient-text">Shako Mako</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#discord" class="nav-link">Discord Bots</a>
+                <a href="index.html#telegram" class="nav-link">Telegram Bots</a>
+                <a href="index.html#scripts" class="nav-link">Web Scripts</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="contact.html" class="btn-glow" style="background: var(--cyan-bright); color: #000;">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding" style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get in Touch</span>
+                <h2>Let's Start a <span class="gradient-text">Conversation</span></h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                <!-- Contact Info -->
+                <div style="display: grid; gap: 2rem;">
+                    <div class="glass-card">
+                        <div class="card-icon-box"><i class="fa-brands fa-discord"></i></div>
+                        <h3>Join Discord</h3>
+                        <p>Get instant support and chat with our community.</p>
+                        <a href="http://discord.gg/sms1" class="link-arrow" target="_blank">Join Server <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <h3>Email Us</h3>
+                        <p>For business inquiries and custom projects.</p>
+                        <a href="mailto:info@shakomako.xyz" class="link-arrow">info@shakomako.xyz <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-card">
+                    <h3>Send a Message</h3>
+                    <form style="margin-top: 2rem;">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" class="form-input" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="form-input" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-input" rows="5" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="button" class="btn-solid" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html" class="footer-logo">Shako <span class="gradient-text">Mako</span></a>
+                    <p style="color: var(--text-muted); max-width: 300px;">
+                        The ultimate marketplace for high-quality bots and scripts.
+                    </p>
+                    <div class="socials">
+                        <a href="http://discord.gg/sms1" class="social-btn" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        <a href="mailto:info@shakomako.xyz" class="social-btn"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4>Products</h4>
+                    <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="index.html#discord" class="footer-link">Discord Bots</a></li>
+                        <li><a href="index.html#telegram" class="footer-link">Telegram Bots</a></li>
+                        <li><a href="index.html#scripts" class="footer-link">Web Scripts</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Company</h4>
+                    <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="tos.html" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Newsletter</h4>
+                    <p style="color: var(--text-muted); margin: 1.5rem 0 1rem;">Subscribe for updates.</p>
+                    <div style="position: relative;">
+                        <input type="email" placeholder="Your Email" style="width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; border-radius: 8px;">
+                        <button style="position: absolute; right: 5px; top: 5px; height: calc(100% - 10px); width: 40px; background: var(--cyan-bright); border: none; border-radius: 6px; color: #000;"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; color: var(--text-muted); font-size: 0.9rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05);">
+                &copy; 2026 Shako Mako. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

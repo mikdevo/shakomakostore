@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shako Mako | Next-Gen Digital Assets</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Scripts (Defer for performance) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Shako Mako">
+                <span class="gradient-text">Shako Mako</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#discord" class="nav-link">Discord Bots</a>
+                <a href="#telegram" class="nav-link">Telegram Bots</a>
+                <a href="#scripts" class="nav-link">Web Scripts</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="contact.html" class="btn-glow">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-wrapper">
+        <div class="hero-bg"></div> <!-- Placeholder for particle canvas if needed -->
+        
+        <div class="hero-content">
+            <span class="hero-badge">✨ Premium Digital Assets</span>
+            <h1 class="hero-title">
+                <span style="display:inline-block">Elevate Your</span><br>
+                <span style="display:inline-block" class="gradient-text">Digital Presence</span>
+            </h1>
+            <p class="hero-subtitle">
+                Unlock the potential of your community with our high-performance Discord bots, 
+                Telegram automation tools, and professional web scripts.
+            </p>
+            <div class="hero-btns">
+                <a href="#discord" class="btn-solid">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="contact.html" class="btn-glow">Get Support</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Bots -->
+    <section id="discord" class="section-padding grid-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Power Your Server</span>
+                <h2>Discord <span class="gradient-text">Bots</span></h2>
+            </div>
+            
+            <div class="card-grid">
+                <!-- Card 1 -->
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Moderation Bot</h3>
+                    <p>Advanced auto-mod, logs, and protections required for serious communities.</p>
+                    <a href="#" class="link-arrow">View Features <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-solid fa-music"></i></div>
+                    <h3>Music Bot</h3>
+                    <p>Crystal clear audio playback with playlist support and 24/7 uptime capability.</p>
+                    <a href="#" class="link-arrow">View Features <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-solid fa-ticket"></i></div>
+                    <h3>Ticket Bot</h3>
+                    <p>Professional support handling with HTML transcripts and category management.</p>
+                    <a href="#" class="link-arrow">View Features <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Card 4 -->
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-solid fa-coins"></i></div>
+                    <h3>Economy Bot</h3>
+                    <p>Engaging global economy, shops, trading, and currency systems.</p>
+                    <a href="#" class="link-arrow">View Features <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Telegram Bots -->
+    <section id="telegram" class="section-padding grid-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Automate & Grow</span>
+                <h2>Telegram <span class="gradient-text">Solutions</span></h2>
+            </div>
+            
+            <div class="card-grid">
+                <!-- Card 1 -->
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-brands fa-telegram"></i></div>
+                    <h3>Group Manager</h3>
+                    <p>Complete moderation suite with anti-spam, captchas, and welcome messages.</p>
+                    <a href="#" class="link-arrow">View Features <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-solid fa-store"></i></div>
+                    <h3>Shop Automation</h3>
+                    <p>Turn your Telegram channel into a fully automated digital storefront.</p>
+                    <a href="#" class="link-arrow">View Features <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Scripts -->
+    <section id="scripts" class="section-padding grid-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Launch Faster</span>
+                <h2>Web <span class="gradient-text">Scripts</span></h2>
+            </div>
+            
+            <div class="card-grid">
+                <!-- Card 1 -->
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Live Chat System</h3>
+                    <p>Real-time customer support widget ready to embed in any website.</p>
+                    <a href="#" class="link-arrow">View Demo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-solid fa-bell"></i></div>
+                    <h3>Notification System</h3>
+                    <p>Toast and push notification library for instant user alerts.</p>
+                    <a href="#" class="link-arrow">View Demo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-solid fa-pen-to-square"></i></div>
+                    <h3>Blog System</h3>
+                    <p>Lightweight yet powerful CMS for publishing articles and news.</p>
+                    <a href="#" class="link-arrow">View Demo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-solid fa-link"></i></div>
+                    <h3>URL Shortener</h3>
+                    <p>Self-hosted link management with detailed click analytics.</p>
+                    <a href="#" class="link-arrow">View Demo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <h3>File Uploader</h3>
+                    <p>Secure drag-and-drop upload system with progress bars.</p>
+                    <a href="#" class="link-arrow">View Demo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon-box"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h3>Admin Dashboard</h3>
+                    <p>Control panel template for managing users, data, and settings.</p>
+                    <a href="#" class="link-arrow">View Demo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <a href="#" class="footer-logo">Shako <span class="gradient-text">Mako</span></a>
+                    <p style="color: var(--text-muted); max-width: 300px;">
+                        The ultimate marketplace for high-quality bots and scripts. Built for performance, designed for growth.
+                    </p>
+                    <div class="socials">
+                        <a href="http://discord.gg/sms1" class="social-btn" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        <a href="mailto:info@shakomako.xyz" class="social-btn"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4>Products</h4>
+                    <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="#discord" class="footer-link">Discord Bots</a></li>
+                        <li><a href="#telegram" class="footer-link">Telegram Bots</a></li>
+                        <li><a href="#scripts" class="footer-link">Web Scripts</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Company</h4>
+                    <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="tos.html" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Newsletter</h4>
+                    <p style="color: var(--text-muted); margin: 1.5rem 0 1rem;">Subscribe for updates.</p>
+                    <div style="position: relative;">
+                        <input type="email" placeholder="Your Email" style="width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; border-radius: 8px;">
+                        <button style="position: absolute; right: 5px; top: 5px; height: calc(100% - 10px); width: 40px; background: var(--cyan-bright); border: none; border-radius: 6px; color: #000;"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; color: var(--text-muted); font-size: 0.9rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05);">
+                &copy; 2026 Shako Mako. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

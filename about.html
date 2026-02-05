@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Shako Mako</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Shako Mako">
+                <span class="gradient-text">Shako Mako</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#discord" class="nav-link">Discord Bots</a>
+                <a href="index.html#telegram" class="nav-link">Telegram Bots</a>
+                <a href="index.html#scripts" class="nav-link">Web Scripts</a>
+                <a href="about.html" class="nav-link" style="color: #fff;">About</a>
+            </nav>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="contact.html" class="btn-glow">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding" style="padding-top: 150px;">
+        <div class="container">
+            <div class="hero-content" style="margin-bottom: 5rem;">
+                <h1 class="hero-title" style="font-size: 4rem;">We Build <span class="gradient-text">The Future</span></h1>
+                <p class="hero-subtitle">Shako Mako is a team of passionate developers dedicated to creating the most advanced, reliable, and beautiful digital assets for community owners worldwide.</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="glass-card">
+                    <h2 class="gradient-text" style="font-size: 3rem; margin-bottom: 0.5rem;">500+</h2>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="glass-card">
+                    <h2 class="gradient-text" style="font-size: 3rem; margin-bottom: 0.5rem;">50+</h2>
+                    <p>Premium Products</p>
+                </div>
+                <div class="glass-card">
+                    <h2 class="gradient-text" style="font-size: 3rem; margin-bottom: 0.5rem;">24/7</h2>
+                    <p>Dedicated Support</p>
+                </div>
+            </div>
+
+            <div class="section-padding">
+                <div class="section-header">
+                    <span class="section-label">Our Mission</span>
+                    <h2>More Than Just <span class="gradient-text">Code</span></h2>
+                </div>
+                <div class="glass-card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1.2rem; line-height: 1.8;">
+                        We believe that technology should be accessible, beautiful, and powerful. 
+                        Whether you are running a massive Discord server or a niche Telegram community, 
+                        our tools are designed to automate the boring stuff so you can focus on what matters: 
+                        <strong>Your Community.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same Footer as Index -->
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html" class="footer-logo">Shako <span class="gradient-text">Mako</span></a>
+                    <p style="color: var(--text-muted); max-width: 300px;">
+                        The ultimate marketplace for high-quality bots and scripts.
+                    </p>
+                    <div class="socials">
+                        <a href="http://discord.gg/sms1" class="social-btn" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        <a href="mailto:info@shakomako.xyz" class="social-btn"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4>Products</h4>
+                    <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="index.html#discord" class="footer-link">Discord Bots</a></li>
+                        <li><a href="index.html#telegram" class="footer-link">Telegram Bots</a></li>
+                        <li><a href="index.html#scripts" class="footer-link">Web Scripts</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Company</h4>
+                    <ul style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="tos.html" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Newsletter</h4>
+                    <p style="color: var(--text-muted); margin: 1.5rem 0 1rem;">Subscribe for updates.</p>
+                    <div style="position: relative;">
+                        <input type="email" placeholder="Your Email" style="width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; border-radius: 8px;">
+                        <button style="position: absolute; right: 5px; top: 5px; height: calc(100% - 10px); width: 40px; background: var(--cyan-bright); border: none; border-radius: 6px; color: #000;"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; color: var(--text-muted); font-size: 0.9rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05);">
+                &copy; 2026 Shako Mako. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
